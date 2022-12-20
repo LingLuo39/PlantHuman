@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef Name="SSAADDSASDASASDPlantBase" Abstract="True">
+    <category>Plant</category>
+    <thingClass>Plant</thingClass>
+    <altitudeLayer>LowPlant</altitudeLayer>
+    <useHitPoints>True</useHitPoints>
+    <statBases>
+      <Flammability>1</Flammability>
+	  <MaxHitPoints>150</MaxHitPoints>
+      <Nutrition>0.80</Nutrition>
+    </statBases>
+	<pathCost>10</pathCost>
+    <tickerType>Long</tickerType>
+    <selectable>true</selectable>
+    <neverMultiSelect>True</neverMultiSelect>
+    <drawerType>MapMeshOnly</drawerType>
+    <pathCostIgnoreRepeat>false</pathCostIgnoreRepeat>
+    <graphicData>
+	  <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutPlant</shaderType>
+    </graphicData>
+    <ingestible>
+      <foodType>Plant</foodType>
+      <preferability>RawBad</preferability>
+	</ingestible>
+    <plant>
+	  <growDays>5</growDays>
+      <wildOrder>2</wildOrder>
+      <purpose>Misc</purpose>
+	  <dieIfLeafless>true</dieIfLeafless>
+	  <maxMeshCount>1</maxMeshCount>
+	  <harvestTag>Standard</harvestTag>
+	  <harvestYield>1</harvestYield>
+	  <fertilityMin>0.7</fertilityMin>
+	  <fertilitySensitivity>1.0</fertilitySensitivity>
+      <soundHarvesting>Harvest_Standard</soundHarvesting>
+      <soundHarvestFinish>Harvest_Standard_Finish</soundHarvestFinish>
+      <sowWork>170</sowWork>
+      <harvestWork>250</harvestWork>
+      <visualSizeRange>
+        <min>0.3</min>
+        <max>1.20</max>
+      </visualSizeRange>
+      <topWindExposure>0.1</topWindExposure>
+    </plant>
+  </ThingDef>
+  
+  <ThingDef ParentName="SSAADDSASDASASDPlantBase">
+	<defName>Plant_Human</defName>
+	<label>Wildling Cocoon</label>
+	<description>That's not a good idea\nCan Plant Wildling.</description>
+	<graphicData>
+	  <texPath>Plant_Human</texPath>
+	</graphicData>
+	<plant>
+	  <harvestedThingDef>Mote_MakeHuman</harvestedThingDef>
+	  <sowTags>
+		<li>Ground</li>
+		<li>Hydroponic</li>
+	  </sowTags>
+	</plant>
+  </ThingDef>
+  
+  <ThingDef ParentName="MoteBase">
+    <defName>Mote_MakeHuman</defName>
+    <thingClass>PlantHuman.GetPawnThing</thingClass>
+    <graphicData>
+      <texPath>Things/Mote/Bombardment</texPath>
+      <shaderType>MoteGlow</shaderType>
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <drawOffscreen>true</drawOffscreen>
+    <mote>
+      <fadeInTime>0.01</fadeInTime>
+      <solidTime>0.01</solidTime>
+      <fadeOutTime>0.01</fadeOutTime>
+    </mote>
+  </ThingDef>
+
+</Defs>

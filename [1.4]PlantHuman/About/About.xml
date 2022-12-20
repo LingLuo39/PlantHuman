@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ModMetaData>
+	<name>Plant Human</name>
+	<author>LingLuo;Alexia</author>
+    <packageId>LingLuo.PlantHuman</packageId>
+	<supportedVersions>
+		<li>1.4</li>
+		<li>1.3</li>
+		<li>1.2</li>
+		<li>1.1</li>
+		<li>1.0</li>
+	</supportedVersions>
+	<description>
+	Start a human farm to trade with passing cannibals or pirates, feed your cannibal colony, feed your carnivores, harvest organs, create an army of expendable soldiers, or just increase the size of your colony quickly. The game play applications are endless!
+
+- Wildling Cocoons are plants that can be sown in a growing zone.
+- Once they mature, they can be harvested and will randomly produce either a wild man or wild woman.
+- Wild men and women function in the expected ways.
+(They are considered wildlife and will be listed in your Wildlife menu. Like any wild animal, you can hunt them or tame them. If you successfully tame them, they become part of your colony and function like all your other pawns. If you hunt and kill them, they will be taken to whatever spot you have assigned for human corpses. Alternately, you can arrest them, at which point they function like any other prisoner. Recruit them, execute them, harvest their organs, etc.)
+
+Safe to add and remove from existing saves.
+(Delete any existing cocoons before removing the mod.)
+Dependancies: None
+
+This Mod is released under the MIT protocol
+
+update content
+The planted creatures will no longer have abnormal kinship (will not plant their own family...)
+The planted creature will not have old wounds (and any other hediff)</description>
+</ModMetaData>
